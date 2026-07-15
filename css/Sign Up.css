@@ -1,0 +1,65 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+#nav1{
+    background-color: black;
+    color: white;
+    font-size: 50%;
+    width: 100%;
+    height: 1%;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.nav1-par{
+
+}
+.nav1-a{
+    color: white;
+    font-size: larger;
+}
+.nav1-sel{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+#nav2{
+    border-bottom: 1px solid;
+    border-color: black;
+    height: 20%;
+}
+.nav2-par{
+    margin-right: 200px;
+    font-family: "Inter", sans-serif;
+    font-size: larger;
+}
+.nav2-uli{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    justify-content: center;
+}
+.nav2-a{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav2-inp{
+    width: 193px;
+    float: right;
+}
+.main{
+    float: right;
+    padding-top: 1%;
+}
+img{
+    float: left;
+    width: 50%;
+    padding-top: 1%;
+}
