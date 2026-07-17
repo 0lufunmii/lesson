@@ -4,19 +4,16 @@
 body{
     background-color: whitesmoke;
 }
-#nav1{
+.nav1{
     background-color: black;
     color: white;
     font-size: 50%;
-    width: 100%;
+    width: 1fr;
     height: 1%;
     position: static;
     display: flex;
     justify-content: center;
     align-content: center;
-}
-.nav1-par{
-
 }
 .nav1-a{
     color: white;
@@ -27,7 +24,7 @@ body{
     border-color: black;
     color: white;
 }
-#nav2{
+.nav2{
     border-bottom: 1px solid;
     border-color: black;
     height: 20%;
@@ -40,8 +37,6 @@ body{
 .nav2-uli{
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
     gap: 20px;
     justify-content: center;
 }
@@ -55,8 +50,8 @@ body{
     float: right;
 }
 .main{
+    display: grid;
     float: right;
-    padding-top: 1%;
 }
 img{
     float: left;
