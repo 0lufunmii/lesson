@@ -1,38 +1,51 @@
 *{
+    flex-wrap: wrap;
     font-family: "Inter", sans-serif;
 }
 body{
-    background-color: whitesmoke;
+    background-color: white;
 }
 .nav1{
     background-color: black;
     color: white;
-    font-size: 50%;
-    width: 1fr;
-    height: 1%;
-    position: static;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 60%;
+    width: 100%;
 }
-.nav1-a{
-    color: white;
-    font-size: larger;
+.nav1-par a{
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 4px;
 }
 .nav1-sel{
+    border: none;
     background-color: black;
-    border-color: black;
     color: white;
+    position: absolute;
+    right: 10%;
 }
 .nav2{
     border-bottom: 1px solid;
     border-color: black;
     height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
 }
 .nav2-par{
-    margin-right: 200px;
     font-family: "Inter", sans-serif;
     font-size: larger;
+    font-weight: bold;
+    margin-left: 7%;
+}
+.nav2-hamb{
+    font-size: 30px;
+    display: none;
+    float: right;
 }
 .nav2-uli{
     display: flex;
@@ -42,19 +55,185 @@ body{
 }
 .nav2-a{
     color: black;
-    display: inline-block;
+    display: flex;
     text-decoration: none;
 }
+.search{
+    position: relative;
+    height: 20px;
+    margin-right: 3%;
+}
 .nav2-inp{
-    width: 193px;
-    float: right;
+    background-color: #F5F5F5;
+    border: none;
+    height: 38px;
+    width: 250px;
+    margin-top: 5%;
+    padding-left: 20px;
+}
+.search-icon{
+    position: absolute;
+    right: 12px;
+    width: 16px;
+    top: 155%;
+    transform: translateY(-50%);
 }
 .main{
-    display: grid;
-    float: right;
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    padding: 40px 20px;
 }
-img{
-    float: left;
-    width: 50%;
-    padding-top: 1%;
+.main-img{
+    flex: 1;
 }
+.signup-image img{
+    width: 20%; 
+    height: auto;
+    display: flex;
+}
+.signup{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:380px;
+}
+.signup h1{
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+.small-wrds{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 32px;
+}
+.signup input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 32px;
+    font-size: 14px;
+    outline: none;
+}
+.btn1 {
+    background-color: #db4444;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.btn2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 12px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.btn2 img {
+    width: 18px;
+    height: 18px;
+}
+.login {
+    font-size: 14px;
+    text-align: center;
+}
+.login a {
+    text-decoration: underline;
+    margin-left: 4px;
+    color: black;
+}
+
+
+footer{
+    width: 93%;
+    height: 15%;
+    padding: 2% 0 2% 7%;
+    border-color: white;
+    background-color: black;
+    color: white;
+    margin-top: 4%;
+}
+.foot-container{
+    display: flex;
+    gap: 5em;
+}
+.message-email input{
+    height: 30px;
+    width: 180px;
+    background-color: black;
+    border-color: white;
+    border-radius: 5px;
+}
+.message-email img{
+    width: 16px;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.foot-imgs{
+    display: flex;
+    gap: 0.5em;
+}
+.stores{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.stores img{
+    width: 100px;
+    height: 50px;
+}
+.social-media{
+    flex-direction: column;
+}
+@media(max-width:1294px){
+    footer{
+        display: none;
+    }
+}
+@media (max-width: 1159px){
+    .main-img{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .signup{
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 802px){
+    .nav2-uli{
+        display: none;
+    }
+    .nav1-sel{
+        display: none;
+    }
+}
+@media (max-width: 544px){
+    .nav1 select{
+        display: none;
+    }
+    .nav1-par a{
+        display: none;
+    }
+    .nav2{
+        display: none;
+    }
+    .nav2-hamb{
+        display: contents;
+    }
+}
+/* work on why the footer is turning into
+columns when the width is reduced, make 
+hamburger to be functional with inline 
+javascript, make the language changer more
+responsive on smaller widths

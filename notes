@@ -1,0 +1,25 @@
+<div class="nav1">
+                <p class="nav1-par">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="" class="nav1-a">ShopNow</a></p>
+                <select class="nav1-sel" style="left: 100%;">
+                    <option value="Eng">English</option>
+                </select>
+            </div>
+
+
+            .nav1{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 1%;
+    position: static;
+}
+.nav1-par{
+    font-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.nav1-a{
+    color: white;
+    font-size: larger;
+}
