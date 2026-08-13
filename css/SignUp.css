@@ -163,7 +163,7 @@ footer{
 }
 .foot-container{
     display: flex;
-    gap: 5em;
+    gap: 5rem;
 }
 .message-email input{
     height: 30px;
@@ -179,12 +179,12 @@ footer{
 }
 .foot-imgs{
     display: flex;
-    gap: 0.5em;
+    gap: 0.5rem;
 }
 .stores{
     display: flex;
     flex-direction: column;
-    gap: 0.3em;
+    gap: 0.3rem;
 }
 .stores img{
     width: 100px;
