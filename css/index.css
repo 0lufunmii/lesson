@@ -78,78 +78,9 @@ body{
     top: 155%;
     transform: translateY(-50%);
 }
-.main{
-    display: flex;
-    gap: 100px;
-    max-width: 1200px;
-    padding: 40px 20px;
-}
-.main-img{
-    flex: 1;
-}
-.signup-image img{
-    width: 20%; 
-    height: auto;
-    display: flex;
-}
-.signup{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width:380px;
-}
-.signup h1{
-    font-size: 36px;
-    margin-bottom: 8px;
-}
-.small-wrds{
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 32px;
-}
-.signup input{
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-    margin-bottom: 32px;
-    font-size: 14px;
-    outline: none;
-}
-.btn1 {
-    background-color: #db4444;
-    color: #fff;
-    border: none;
-    padding: 12px 0;
-    font-size: 14px;
-    cursor: pointer;
-    margin-bottom: 16px;
-}
-.btn2 {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 12px 0;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    cursor: pointer;
-    margin-bottom: 24px;
-}
-.btn2 img {
-    width: 18px;
-    height: 18px;
-}
-.login {
-    font-size: 14px;
-    text-align: center;
-}
-.login a {
-    text-decoration: underline;
-    margin-left: 4px;
-    color: black;
-}
+
+
+
 footer{
     width: 93%;
     height: 15%;
@@ -191,47 +122,3 @@ footer{
 .social-media{
     flex-direction: column;
 }
-@media(max-width:1294px){
-    footer{
-        display: none;
-    }
-}
-@media (max-width: 1159px){
-    .main-img{
-        display: none;
-    }
-    footer{
-        display: none;
-    }
-    .signup{
-        width: 200px;
-        margin: 0 auto;
-    }
-}
-@media (max-width: 802px){
-    .nav2-uli{
-        display: none;
-    }
-    .nav1-sel{
-        display: none;
-    }
-}
-@media (max-width: 544px){
-    .nav1 select{
-        display: none;
-    }
-    .nav1-par a{
-        display: none;
-    }
-    .nav2{
-        display: none;
-    }
-    .nav2-hamb{
-        display: contents;
-    }
-}
-/* work on why the footer is turning into
-columns when the width is reduced, make 
-hamburger to be functional with inline 
-javascript, make the language changer more
-responsive on smaller widths
